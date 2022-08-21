@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: department-service
+  data:
+    mongodb:
+      authentication-database: admin
+      username: kanatera
+      password: rafael1978
+      database: app_db
+      port: 27017
+      host: 192.168.7.17
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka
