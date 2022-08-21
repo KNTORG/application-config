@@ -6,7 +6,7 @@ spring:
     name: gateway-proxy
 
 zuul:
-  prefix: /api
+  #prefix: /api
   ignoredServices: '*'
   routes:
     employee-service:
