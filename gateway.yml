@@ -11,13 +11,16 @@ zuul:
   routes:
     employee-service:
       path: /employees/**
-      stripPrefix: false
-    department-service:
-      path: /departments/**
-      stripPrefix: false
-    organization-service:
-      path: /organizations/**
-      stripPrefix: false
+      serviceId: employee-service
+#     employee-service:
+#       path: /employees/**
+#       stripPrefix: false
+#     department-service:
+#       path: /departments/**
+#       stripPrefix: false
+#     organization-service:
+#       path: /organizations/**
+#       stripPrefix: false
 
 eureka:
   client:
