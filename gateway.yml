@@ -4,14 +4,23 @@ server:
 spring:
   application:
     name: gateway-proxy
+  cloud:
+    gateway:
+      routes:
+        - id: employee-service
+          uri: lb://EMPLOYEE-SERVICE
+          predicates:
+            - Path=/employee/**
 
-zuul:
-  #prefix: /api
-  ignoredServices: '*'
-  routes:
-    employee-service:
-      path: /employees/**
-      serviceId: employee-service
+
+
+#zuul:
+#  #prefix: /api
+#  ignoredServices: '*'
+#  routes:
+#    employee-service:
+#      path: /employees/**
+#      serviceId: employee-service
 #     employee-service:
 #       path: /employees/**
 #       stripPrefix: false
