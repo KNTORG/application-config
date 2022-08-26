@@ -1,6 +1,11 @@
 spring:
   application:
     name: employee-service
+  cloud:
+    config:
+      override-system-properties: false
+      allow-override: true
+      override-none: true
   data:
     mongodb:
       authentication-database: admin
