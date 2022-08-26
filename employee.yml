@@ -7,7 +7,7 @@ spring:
     name: employee-service
   cloud:
     config:
-      override-system-properties: false
+      override-system-properties: true
       allow-override: true
       override-none: true
   data:
