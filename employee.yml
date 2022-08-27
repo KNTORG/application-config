@@ -12,7 +12,7 @@ spring:
       override-system-properties: true
       allow-override: true
       override-none: true
-  sleuth: #add this
+  sleuth:
     sampler:
       probability: 1.0
   data:
