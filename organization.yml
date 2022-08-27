@@ -1,6 +1,11 @@
 spring:
+  zipkin:
+    baseUrl: http://192.168.7.17:9411
   application:
     name: organization-service
+  sleuth:
+    sampler:
+      probability: 1.0
   data:
     mongodb:
       authentication-database: admin
